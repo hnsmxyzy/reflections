@@ -1,0 +1,58 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Fill in your answer here
+	通过比较两个版本之间的差异，可以找出两个版本文件间的所有修改(modify)情况，
+通过对比修改前后的差异，可以较为容易的定位错误所在位置，从而省去比对大量相同
+内容的时间。
+	
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here
+	访问文件的历史记录不仅可以帮助编程者回忆起当时的操作思路，而且也有助于编程者
+找出早期版本中的优缺点，以便编程者在保留原版本优点的同时尽量减少新版本中的错误(bug)，
+便于编程者发布先行测试(beta)版本以及回滚(roll back)错误操作。
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Fill in your answer here
+	手动选择提交的优点是可以人为控制提交频率和决定多大程度的更改适合作为一次提交。
+如果使用者的经验丰富的话，在这两点中都能取得很好的效果，这样文件的历史记录会有更高
+的价值。但缺点是对于刚开始接触版本控制的使用者来说，把握提交频率和更改程度并不是一
+件容易的事，导致提交的更改不是过大就是过小，历史的参考意义也会降低。
+	自动保存版本的优点是使用者不用花太多精力关注什么时候需要保存版本，可以更集中
+精力做开发或编程本身的工作。但缺点是自动保存的版本，在后期需要查找历史记录时，可能
+受到固定保存方式的影响，历史信息的局限性很大，能起到的作用不大。
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here
+	因为git的版本控制系统控制的文件多为代码，而一个具有完整功能的程序代码一定由大量
+不同类型的文件组成，这些文件间的逻辑或功能都是紧密相关的，有着很强的联系。因此当某
+个文件被更改后，与之相关的多个文件可能都会发生变化，因此同时追踪多个文件的提交变化
+是必要的。而像其他系统中，更倾向于每个文件就是一个逻辑完整的单独个体，例如说明书，
+参考书等文档。因此这些系统着重对待单文件的更新。
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here
+	首先使用git log，查看所有的提交历史，再找到两次历史提交的commit ID，使用git 
+diff命令，依次输入两次commit ID，即可查看两次提交对文件的改动。
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here
+	通过版本控制，可以很方便的找出造成破坏的更改时间以及位置，定位出错原因，并能
+使文件恢复至正确版本，因此，在更改时可以更放心大胆，而不必担心造成破坏后无法恢复。
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+	通过利用git，更好地控制和管理我的代码，跟踪错误产生的原因，并能优化和完善代码
+结构，最后希望可以利用git，和其他开发人员更好的分工合作，提高开发效率，共同完成项
+目任务。
