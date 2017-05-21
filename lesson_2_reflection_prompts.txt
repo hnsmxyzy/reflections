@@ -1,0 +1,24 @@
+What happens when you initialize a repository? Why do you need to do it?
+	初始化一个版本库后会在当前目录下创建一个.git目录。此时版本库中提交的次数为0
+使用git log命令无法查看commit历史，可以使用git status命令查看当前版本库中未被
+追踪的文件。因为我们不需要跟踪所有的文件。
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+	暂存区是独立于文件目录的存储区，通过使用git add命令，可以将工作目录的一个或
+多个文件存入暂存区中。暂存区使用户的提交更加灵活，用户可以将自己认为合适的一个或
+多个文件一并存入缓存区中，并打包提交。
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
