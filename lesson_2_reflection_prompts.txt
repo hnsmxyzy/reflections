@@ -11,14 +11,31 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	对文件进行修改后，可以使用git diff来查看暂存区与工作区文件的区别。以便工作
+中断后仍能找出修改的内容。当文件添加到暂存区后，可以使用git diff --staged来比较
+版本库中最新的提交与暂存区中的文件，确认该修改是需要提交的，再通过git commit进
+行提交。
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	使用分支可以在保持主分支(master)的代码功能不受到影响的状态下开发不同的版本/
+实验性功能，可以增强代码的复用性，并且也可以利用分支来比较版本的差异，而不是用
+一串难以理解的提交序号(commit ID)。
 
 How do the diagrams help you visualize the branch structure?
+	绘制图表可以将整个提交历史及各分支利用树形结构表出，借助该图表，可以很方便的
+找出分支处提交文件版本。并且可以反映提交的消息和内容。该图表的每一个结点分别对应
+一次提交，一般根节点也即初始(init)提交。
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	将两个分支合并后会将指定的分支合并到当前检出(check out)的分支中，并将当前标签
+进行更新后作为一次新的提交，因此新的提交会将当前标签的所有更改包含在内。在图表中
+我们将合并后的提交作为两个分支最近提交的父节点，因为从该提交可以到达两个分支。
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+	git的自动合并可以在多数情况下，无需人工参与的完成分支的合并，操作简单，用户无
+需关心合并文件具体内容。缺点是git无法解决冲突，冲突必须交给用户来决定如何解决与保
+留。人工合并可以使合并的内容符合使用者需求，但当待合并内容较多时，人工合并效率很
+低且出错率提高。
