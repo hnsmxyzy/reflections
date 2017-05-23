@@ -1,7 +1,8 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    首先，当我需要与其他人合作共同开发一个项目的时候，我会使用远程仓库。此外，当我需要为我的
+工作备份的时候，我会使用远程仓库来备份我的工作，以免本地遭到攻击或误删后难以找回。
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
