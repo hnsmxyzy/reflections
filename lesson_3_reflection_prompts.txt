@@ -1,13 +1,16 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    首先，当我需要与其他人合作共同开发一个项目的时候，我会使用远程仓库。此外，当我需要为我的
-工作备份的时候，我会使用远程仓库来备份我的工作，以免本地遭到攻击或误删后难以找回。
+    首先，当我需要与其他人合作共同开发一个项目的时候，我会使用远程仓库。此外，当
+我需要为我的工作备份的时候，我会使用远程仓库来备份我的工作，以免本地遭到攻击或误
+删后难以找回。
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    因为我希望由自己决定哪些改动是需要拉回(pull)到本地的，对于整个项目来讲，我只
+需要将自己要用到的部分与远程保持同步即可，这样既能节省本地空间，又不至于使本地因
+过多的同步而显得条理不清。
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
