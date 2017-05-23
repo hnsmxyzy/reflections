@@ -15,7 +15,9 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    forks用于将GitHub其他人的版本库创建一份副本至自己的GitHub版本库，只能在GitHub
+上使用；clones可以从remote或者local的一个版本库中创建一个副本至当前的工作区；
+branches在一个版本库中创建一个新的分支，仅对当前版本库做出改动。
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
