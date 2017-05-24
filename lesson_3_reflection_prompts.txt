@@ -22,7 +22,9 @@ branches在一个版本库中创建一个新的分支，仅对当前版本库做
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    拥有远程分支的上次已知状态副本可以在更新本地副本发生冲突时，为使用者提供合并
+依据。如果本地未存有上次远程分支副本，当需要解决冲突性更改时，使用者可能无法判断
+哪项更改是需要保留的，这将会为合并带来困难。
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
