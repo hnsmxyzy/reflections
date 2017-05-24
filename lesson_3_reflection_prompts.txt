@@ -29,7 +29,10 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    如果不使用Git或者GitHub，协同工作需要大家面对面(face to face)或者同时在线讨论，
+同时每个人的本地需要保存大量开发过程的原始副本，以解决可能遇到的冲突问题，还需要
+一个人专门合并与总结所有人的工作成果。通过对比可以发现使用Git或者GitHub可以使每个
+人的开发过程更有条理，更方便进行更改与解决冲突，更容易进行团队协作。
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
