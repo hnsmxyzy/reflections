@@ -37,4 +37,7 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    当我与其他人合作并独立开发特定部分时，我会在独立的分支中进行更改。这样可以保证
+master的分支一直是可运行和正确的，如果项目较大，合作人员较多，在独立的分支中更改可
+以使master分支不至于因为多次修改而出现不可预知的错误。如果项目工程量不大或者只有几
+个人合作，可以直接在master上进行更改，这样可以直接推进更改，不用进行多次合并操作。
